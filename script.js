@@ -9,5 +9,5 @@ function click()
 function updateDisp()
 {
   var elem = document.getElementById('text');
-  elem.innerHTML = "<h1>Samuel is cooler than you</h1>";
+  elem.innerHTML = "<h1> "+money+" </h1>";
 }
