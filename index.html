@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="script.js"></script>
+    <script>
+      var money = 0;
+
+      function updateDisp()
+      {
+        window.alert("money="+money);
+        let elem = document.getElementById('text');
+        elem.innerHTML = "<h1> "+money+" </h1>";
+      }
+      
+      function click()
+      {
+        money++;
+        window.alert("money="+money);
+        let elem = document.getElementById('text');
+        elem.innerHTML = "<h1> "+money+" </h1>";
+      }
+    </script>
   </head>
   <body>
-    <button onclick="click()"><img src="https://lastfm.freetls.fastly.net/i/u/ar0/221d9dea5bed3ecd731606df30f82ea3.jpg" alt="Big Chungus" width="300" height="300"/></button>
+    <button id="btn" onclick="click()">
+      <img src="https://lastfm.freetls.fastly.net/i/u/ar0/221d9dea5bed3ecd731606df30f82ea3.jpg" alt="Big Chungus" width="150" height="150"/>
+    </button>
     <div id="text">
     </div>
    </body>
