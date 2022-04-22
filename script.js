@@ -8,6 +8,7 @@ function click()
 
 function updateDisp()
 {
+  window.alert("money="+money);
   var elem = document.getElementById('text');
   elem.innerHTML = "<h1> "+money+" </h1>";
 }
